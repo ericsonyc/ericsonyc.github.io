@@ -4,19 +4,29 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading"><b>Articles</b></h1>
+  <h1 class="page-heading"><b>Categories</b></h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+  {% for category in site.categories %}
+  <h2><b>{{ category | first }}</b></h2>
+  </span>total:&nbsp;{{ category | last | size }}</span>
+  <ul class="arc-list">
+    {% for post in category.last %}
+        <li>{{ post.date | date:"%d/%m/%Y"}}&nbsp;&nbsp;<a href="{{ post.url }}"><b>{{ post.title }}</b></a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+  <!--<ul class="post-list">
+    {% for category in site.categories.CATEGORY %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">ericson{{ post.title }}</a>
         </h2>
       </li>
     {% endfor %}
-  </ul>
+  </ul>-->
 
   <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
