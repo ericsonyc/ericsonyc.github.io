@@ -33,7 +33,7 @@ post
 博客原作者:Mark Otto 
 [github](github.com/mdo)
 
-博客修改:SooHu
+博客修改:Ericson
 
 ##License
-MIT
+NJU
