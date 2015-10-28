@@ -1,23 +1,31 @@
-# Site settings
-title: Ericson's Blog  永无止境，不断进步
-email: 1220246394@qq.com
-description: >
-  Hello everyone! If you find any mistakes in my blog, Please email me about the mistakes! Sorry 
-  about that there is no comment function recently(It will be developed later).(有错误请邮件联系我~~)
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ericsonyc.github.io/" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
-github_username:  ericsonyc
+# Dependencies
+markdown:         rdiscount
+highlighter:      pygments
 
-# Build settings
-pygments: true
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - hard_wrap
-    - no_intra_emphasis
-    - autolink
-    - strikethrough
-    - fenced_code_blocks
-safe: false
-highlighter: pygments
+#
+encoding:         "utf-8"
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Ericson's blog
+tagline:          'Time is limited, To be a better better man'
+description:      'Hello! Here is my blog about technology and later about life.'
+url:              http://ericsonyc.github.io
+
+author:
+  name:           'Ericson'
+  url:            https://github.com/ericsonyc
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
+
+# Custom vars
+version:          1.0.0
+
+# duoshuo
+comments :
+    provider : duoshuo
+    duoshuo :
+      short_name : ericson
