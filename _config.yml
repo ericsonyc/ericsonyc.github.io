@@ -10,7 +10,7 @@ url: "http://ericsonyc.github.io/ericsonyc" # the base hostname & protocol for y
 github_username:  ericsonyc
 
 # Build settings
-markdown: rdiscount
+markdown: kramdown
 
 safe: false
 highlighter: pygments
