@@ -5,7 +5,7 @@ description: >
   Hello everyone! If you find any mistakes in my blog, Please email me about the mistakes! Sorry 
   about that there is no comment function recently(It will be developed later).(有错误请邮件联系我~~)
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ericsonyc.github.io/ericsonyc" # the base hostname & protocol for your site
+url: "http://ericsonyc.github.io/" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  ericsonyc
 
