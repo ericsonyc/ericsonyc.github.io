@@ -2,8 +2,9 @@
 layout: post
 author: Ericson
 date: 2015-10-28 23:44
-title: Java Collections
+title: Java Collections <一>
 category: Java
+tag: [java,collection]
 ---
 
 Java集合类是一个特别有用的工具类，可以用于存储数量不等的多个对象，并可实现常用的数据结构。<br/>
@@ -51,4 +52,17 @@ TreeSet类：是SortedSet接口的实现类，可以确保集合元素处于排�
 </ul>
 TreeSet类是线程非安全的，源码中是用TreeMap来实现的，而TreeMap采用红黑树的结构来存储数据，是一种自平衡的排序二叉树，TreeSet把<key,value>值封装成Entry类来表示红黑树的一个节点。
 
-EnumSet类：
+EnumSet类：EnumSet类是一个专门为枚举类设计的集合类。EnumSet的集合元素必须是指定枚举类型的枚举值，该枚举类型在创建EnumSet时显示或隐式指定。不允许加入null值。
+
+可以通过Collection工具类的synchronizedSortedSet方法来包装Set集合的同步性。
+>SortedSet s=Collections.synchronizedSortedSet(new TreeSet(...));
+
+List集合代表一个元素有序、可重复的集合，集合中每个元素都有其对应的顺序索引。List接口还提供了listIterator方法，该方法返回一个ListIterator对象，ListIterator接口继承Iterator接口，还专门提供了一个前向迭代的功能，而且还可以通过add方法向List集合中添加元素（Iterator只能删除元素）。
+
+ArrayList和Vector都是基于数组实现的List，底层的数据结构是数组，所以ArrayList和Vector类封装了一个动态的、允许再分配的Object[]数组。两个类都通过initialCapacity参数来设置该数组的长度，当向其中添加元素超出该数组长度时，它们的initialCapacity会自动增加。<font color="red">ArrayList是线程不安全的，而Vector是线程安全的。所以Vector的性能要比ArrayList的性能低。Vector还有个子类Stack，也是线程安全的，模仿了栈的操作</font>。
+
+Queue用于模拟队列这种数据结构，FIFO。Deque代表一个双端队列，可以同时从两端来添加、删除元素，所以可以当成栈来使用。PriorityQueue保存队列元素的顺序并不是按加入队列的顺序，而是按照队列元素大小进行重新排序。
+
+Deque接口提供了一个实现类ArrayDeque，是基于数组实现的双端队列，底层也是一个Object[]数组来保存元素，如果超出容量，则会重新分配一个Object[]数组来存储集合元素。<font color="red">因为Stack是线程安全的，所以性能较ArrayDeque和LinkedList较差，所以栈结构推荐使用ArrayDeque和LinkedList。</font>
+
+LinkedList类实现了Deque接口，所以可以当成栈，它的底层实现方式是链表，因此随机访问集合元素时性能较差，但在插入和删除方面性能非常出色。<font color="red">对于所有内部基于数组实现的集合，使用随机访问的性能比使用Iterator迭代访问的性能要好，因为随机访问数组会被映射成对数组元素的访问。</font>
