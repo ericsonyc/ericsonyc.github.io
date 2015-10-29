@@ -13,4 +13,33 @@ Java集合大致可以分为：Set、List、Map三种体系:
 	<li>List：代表有序、可重合的集合</li>
 	<li>Map：代表具有映射关系的集合</li>
 </ul>
-Java集合类主要由两个接口派生而来：Collection和Map，Collection和Map是java集合框架的根接口。
+Java集合类主要由两个接口派生而来：Collection和Map，Collection和Map是java集合框架的根接口。Collection接口的继承树如下图所示：<br/>
+![Collection](/public/img/java/collection.png)
+Map接口继承树如下图所示：<br/>
+![Map](/public/img/java/map.png)
+使用Iterator接口可以遍历集合元素，Iterator本身并不提供盛装对象的能力。<font color="red">当使用Iterator对集合里的元素进行迭代时，Iterator并不是把集合本身传递给迭代变量，而是把集合元素的值传给迭代变量，所以修改迭代变量的值对集合元素本身没有任何影响，但可以删除。</font><br/>
+[Java Code]
+{% highlight java %}
+public void iterator(){
+        Collection books=new ArrayList();
+        books.add("a");
+        books.add("b");
+        books.add("c");
+        Iterator it=books.iterator();
+        while(it.hasNext()){
+            String book=(String)it.next();
+            book="d";
+        }
+        System.out.println(books.toString());
+    }
+{% endhighlight %}
+>输出a,b,c
+
+Iterator是fail-fast机制，一旦在迭代过程中检测到该集合已经被修改过，程序立即引发ConcurrentModificationException异常。Iterator方法的工作原理如下图所示：
+![Iterator](/public/img/java/iterator.jpg)
+
+Set集合：判断两个对象相同不是用==运算符，而是用equals方法。因此可以修改equals方法来添加相同的元素。
+
+HashSet类：不是同步的，允许null值，HashSet底层实际上是一个HashMap，把<key,value>值封装成一个Map.Entry类，通过Entry类中的key来比较添加的值。HashSet判断两个对象相等的标准是通过equals方法比较相等，并且hashCode方法返回一样的值。当hashCode相同，当equals不同，元素会以链式存储，影响性能。<font color="red">如果修改一个HashSet中的值可能会出现混乱，因为hashCode可能会根据对象的值计算，当改掉该值时，该对象依然存储在原来的hashCode上，但是再次访问它计算hashCode就不是原来的位置了。</font>
+
+LinkedHashSet类：
