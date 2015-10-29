@@ -1,6 +1,7 @@
 # Dependencies
 markdown:         kramdown
 highlighter:      pygments
+baseurl: ""
 
 #
 encoding:         "utf-8"
