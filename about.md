@@ -4,7 +4,7 @@ title: About
 ---
 
 
-###关于我
+###关于[我](https://github.com/ericsonyc)
 网名小老虎
 目前是个苦逼的计算机研究僧，也就是传说中的IT男，以后希望learn more and be a better man。
 
