@@ -98,6 +98,7 @@ plt.show()
 {%endhighlight%}
 上述代码（该代码源于我实现的Hadoop调度器模块中统计内存利用）可以用来画带填充的折线图，只是初步的python画图，至于一些坐标轴建立，多个子图的画法还没完全懂，后面继续研究。
 上面程序的示意图如下：
+
 <div align="center">
     <img src="/public/img/python/easy.png" width="500" height="300">
 </div>
