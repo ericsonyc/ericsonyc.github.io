@@ -10,7 +10,7 @@ tag: [python,matplot]
 最近在写论文，本来用visio画图，然后发现用latex显示的visio图不够精美，查了资料，发现有很多精美的制作图片的软件，所以选用python来画图，正好可以学习下python语法。
 
 python主要是用matplot和numpy这两个库来画图，后一个库主要是用作处理数字。不废话，上代码：
-``` python
+```python
 import matplotlib.pyplot as plt
 plt.rcParams['text.usetex'] = True
 plt.rcParams['mathtext.default'] = 'bf'
