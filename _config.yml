@@ -1,7 +1,7 @@
 # Dependencies
 markdown: kramdown
-redcarpet:
-  extensions: ["fenced_code_blocks","autolink","tables","strikethrough"]
+redcarpet: 
+    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 
 kramdown:
   auto_ids:       true

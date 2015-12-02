@@ -20,8 +20,8 @@ Hadoop本身也就是由一组Java程序组成，通过Socket绑定到网络端�
 Hadoop常用的端口：<br>
 HDFS端口如下：
 
-<div align="center">
-<table border="1">
+<div style="width:auto; height:auto; overflow:auto">
+<table>
     <tr>
         <td>参数</td>
         <td>描述</td>
@@ -30,7 +30,7 @@ HDFS端口如下：
         <td>例子值</td>
     </tr>
     <tr>
-        <td>fs.default.name</td>
+        <td>fs.defaultFS</td>
         <td>namenode RPC交互端口</td>
         <td>8020</td>
         <td>core-site.xml</td>
@@ -67,5 +67,58 @@ HDFS端口如下：
 </table>
 </div>
 
-|a|b|
-|he|hh|
+MapReduce端口如下：
+
+<div style="width:auto; height:auto; overflow:auto">
+<table>
+    <tr>
+        <td>参数</td>
+        <td>描述</td>
+        <td>默认</td>
+        <td>配置文件</td>
+        <td>例子值</td>
+    </tr>
+    <tr>
+        <td>mapred.job.trackerjob</td>
+        <td>tracker交互端口</td>
+        <td>8021</td>
+        <td>mapred-site.xml</td>
+        <td>hdfs://master:8021</td>
+        <td>mapred.job.trackerjob</td>
+    </tr>
+    <tr>
+        <td>mapred.job.tracker.http.address</td>
+        <td>jobtracker的web管理端口</td>
+        <td>50030</td>
+        <td>mapred-site.xml</td>
+        <td>0.0.0.0:50030</td>
+    </tr>
+    <tr>
+        <td>mapred.task.tracker.http.address</td>
+        <td>tasktracker的HTTP端口</td>
+        <td>50060</td>
+        <td>mapred-site.xml</td>
+        <td>0.0.0.0:50060</td>
+    </tr>
+</table>
+</div>
+其他端口：
+<div style="width:auto; height:auto; overflow:auto">
+    <table>
+        <tr>
+            <td>参数</td>
+            <td>描述</td>
+            <td>默认</td>
+            <td>配置文件</td>
+            <td>例子值</td>
+        </tr>
+        <tr>
+            <td>dfs.namenode.secondary.http-address</td>
+            <td>secondary Namenode web管理端口</td>
+            <td>50090</td>
+            <td>hdfs-site.xml</td>
+            <td>0.0.0.50090</td>
+        </tr>
+    </table>
+</div>
+以上有些配置是hadoop1.x的，2.x的配置请参考[官方文档](http://hadoop.apache.org/docs/)，大概修改上面几个端口以及目录就可以配置多个hadoop。目录配置也可以参考官方文档进行相应的修改。
