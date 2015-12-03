@@ -66,8 +66,6 @@ HDFS端口如下：
     </tr>
 </table>
 </div>
-<font color="red">两台机器都要配置dfs.datanode.address，不然会出现bind 50075 exception。</font>
-
 MapReduce端口如下：
 
 <div style="width:auto; height:auto; overflow:auto">
