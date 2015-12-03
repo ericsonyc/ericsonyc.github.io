@@ -66,6 +66,7 @@ HDFS端口如下：
     </tr>
 </table>
 </div>
+<font color="red">两台机器都要配置dfs.datanode.address，不然会出现bind 50075 exception。</font>
 
 MapReduce端口如下：
 
@@ -99,6 +100,13 @@ MapReduce端口如下：
         <td>50060</td>
         <td>mapred-site.xml</td>
         <td>0.0.0.0:50060</td>
+    </tr>
+    <tr>
+        <td>mapreduce.shuffle.port</td>
+        <td>ShuffleHandler的端口</td>
+        <td>13562</td>
+        <td>mapred-site.xml</td>
+        <td>13562</td>
     </tr>
 </table>
 </div>
