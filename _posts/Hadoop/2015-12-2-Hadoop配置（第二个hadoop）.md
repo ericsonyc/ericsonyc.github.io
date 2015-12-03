@@ -123,3 +123,9 @@ MapReduce端口如下：
     </table>
 </div>
 以上有些配置是hadoop1.x的，2.x的配置请参考[官方文档](http://hadoop.apache.org/docs/)，大概修改上面几个端口以及目录就可以配置多个hadoop。目录配置也可以参考官方文档进行相应的修改。
+
+Hadoop的目录配置看下图：
+
+<div style="width:auto; height:auto; overflow:auto">
+    <img src="/public/img/hadoop/directory_configuration.jpg">
+</div>
