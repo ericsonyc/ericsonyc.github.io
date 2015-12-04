@@ -20,3 +20,5 @@ tag: [linux,git]
 4. 如果有多个储藏，你可以重新应用你刚刚实施的储藏，git stash apply，apply后面也可以加上list列出来的id，表示应用第一次储藏，也可以使用--index 添加索引表示第几次储藏；另一个相同的命令是：git stash pop，弹出最近的储藏应用，并移除栈。<font color="red">值得一提的是，apply命令可以应用储藏，但是不移除栈，可以使用git stash drop {id}来表示希望移除哪次储藏</font>
 5. 可能你想取消应用的储藏，可以使用 git stash show -p [id] \| git apply -R，[id]为可选项，不加默认最近的储藏。（你可能想要新建一个别名，在你的git中增加一个stash-unapply命令，代码为：git config --global alias.stash-unapply '!git stash show -p \| git apply -R'）
 6. 如果你储藏了一些工作，暂时不去理会，然后继续在你的分支上工作，你在重新应用工作时可能会碰到一些问题，如果尝试应用的变更是针对一个你那之后修改过的文件，你会碰到一个归并冲突并且必须去化解它。如果你想用更方便的方法来重新检验你储藏的变更，你可以运行git stash branch {branchname}，这会创建一个新的分支，检出你储藏工作时所处的提交，重新应用你的工作，如果成功，将会丢弃储藏。
+
+>关于git的信息可以参考[这里](https://git-scm.com/book/zh/v1/)
