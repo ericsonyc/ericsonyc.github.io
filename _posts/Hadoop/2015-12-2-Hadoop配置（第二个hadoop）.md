@@ -83,7 +83,6 @@ MapReduce端口如下：
         <td>8021</td>
         <td>mapred-site.xml</td>
         <td>hdfs://master:8021</td>
-        <td>mapred.job.trackerjob</td>
     </tr>
     <tr>
         <td>mapred.job.tracker.http.address</td>
