@@ -47,6 +47,48 @@ tag: [android,development,layout]
 
 </merge>
 {%endhighlight%}
+使用\<merge/\>标签时，必须让\<merge/\>标签本身表示的Layout和parent表示的Layout是一样的，比如\<merge/\>标签本身代表的是FrameLayout，而parent使用的是LinearLayout，这时候就不可以把\<merge/\>标签应用到该LinearLayout中。具体请参考[Android Developers' blog](http://android-developers.blogspot.com/2009/03/android-layout-tricks-3-optimize-by.html)
+
+该标签还可以和\<include/\>标签一起使用，我们使用下面的示例来说明：
+{%highlight html%}
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:okCancelBar="http://schemas.android.com/apk/res/com.example.android.merge">
+
+    <ImageView  
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+    
+        android:scaleType="center"
+        android:src="@drawable/golden_gate" />
+    
+    <com.example.android.merge.OkCancelBar
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_gravity="bottom"
+
+        android:paddingTop="8dip"
+        android:gravity="center_horizontal"
+        
+        android:background="#AA000000"
+        
+        okCancelBar:okLabel="Save"
+        okCancelBar:cancelLabel="Don't save" />
+
+</merge>
+{%endhighlight%}
+
+{%highlight html%}
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        layout="@layout/okcancelbar_button"
+        android:id="@+id/okcancelbar_ok" />
+        
+    <include
+        layout="@layout/okcancelbar_button"
+        android:id="@+id/okcancelbar_cancel" />
+</merge>
+{%endhighlight%}
 
 ###需要时使用\<ViewStub/\>
 
