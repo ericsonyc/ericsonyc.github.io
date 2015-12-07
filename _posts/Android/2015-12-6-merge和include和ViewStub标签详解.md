@@ -27,7 +27,7 @@ tag: [android,development,layout]
               android:padding="10dp" />
 </LinearLayout>
 {%endhighlight%}
-\<include/\>标签中可以添加属性覆盖重用的布局。
+\<include/\>标签中可以添加属性覆盖重用的布局。一般可以覆盖以下几个属性：android:id,android:layout_*。
 
 ###减少视图层级\<merge/\>
 
