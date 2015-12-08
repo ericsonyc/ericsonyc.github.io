@@ -8,4 +8,5 @@ tag: [android,development,touch,animation]
 ---
 
 本文转载自[网页](http://www.cnblogs.com/sunzn/archive/2013/05/10/3064129.html)
+
 ![Android Touch](/public/img/android/android_touch.jpeg)
