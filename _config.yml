@@ -34,7 +34,7 @@ description:      'Hello! Here is my blog about technology and later about life.
 url:              http://ericsonyc.github.io
 
 author:
-  name:           'Ericson'
+  name:           Ericson
   url:            https://github.com/ericsonyc
 
 gems: [jekyll-paginate]
