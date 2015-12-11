@@ -2,7 +2,7 @@
 layout: post
 author: Ericson
 date: 2015-10-28 23:44
-title: Java Collections <一>
+title: Java Collections(一)
 category: Java
 tag: [java,collection]
 ---
