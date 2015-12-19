@@ -9,4 +9,4 @@ tag: [android,development,gesture]
 
 本文转载自[网页](http://blog.csdn.net/harvic880925/article/details/39520901)
 
-![Android Gesture](/public/img/android/android_gesture.jpeg)
+![Android Gesture](/public/img/android/android_gesture.png)
