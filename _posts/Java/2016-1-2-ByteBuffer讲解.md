@@ -13,7 +13,9 @@ tag: [java,bytebuffer]
 ByteBuffer中还可以设置内存中的对齐方式，使用ByteOrder类，代码如下所示：
 
 >ByteOrder.nativeOrder()
+
 >ByteOrder.BIG_ENDIAN
+
 >ByteOrder.LITTLE_EDNIAN
 
 下面转自[网页](http://my.oschina.net/flashsword/blog/159613)
