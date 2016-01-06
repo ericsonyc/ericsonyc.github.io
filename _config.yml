@@ -11,7 +11,7 @@ safe: false
 # so be sure to set them if your theme uses them.
 #
 title : Ericson's Blog
-tagline: Site Tagline
+tagline: To be better man...
 author :
   name : Ericson
   email : 1220246394@qq.com
@@ -56,7 +56,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : /
+  BASE_PATH : /ericsonyc.github.io
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
