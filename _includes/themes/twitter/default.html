@@ -30,10 +30,10 @@
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-    
+
 <!--    font-awesome-->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  
+
   </head>
 
   <body onload="prettyPrint()">
@@ -55,14 +55,14 @@
       <div class="content">
         {{ content }}
       </div>
-      
+
       <footer class="card clearfix">
-        <span style="font-size:30px;"class="fa fa-github pull-left"></span><a href="https://github.com/enml/blog" style="display:inline-block;padding-right:80px;border-right:1px solid #bbb">fork me on GitHub</a>
+        <span style="font-size:30px;"class="fa fa-github pull-left"></span><a href=site.production_url style="display:inline-block;padding-right:80px;border-right:1px solid #bbb">fork me on GitHub</a>
         <p class="pull-right">&copy; 2011 {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
-        
+
       </footer>
 
     </div>
