@@ -1,33 +1,51 @@
-permalink: /:year/:month/:day/:title.html
+# Dependencies
 markdown: kramdown
-pygments: true
+redcarpet: 
+    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 
 kramdown:
-  input: GFM
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-# 作者信息
-author: 
-  name: 闫肃
-  email: suyan0830@gmail.com
-  link: http://yansu.org
-  weibo: http://weibo.com/yansu0711
-  github: http://github.com/suyan
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
 
-# 站点信息
-title: 闫肃的博客 
-description: 闫肃的博客
-url: http://yansu.org
-rss_url: /pages/atom.xml
+highlighter:      pygments
+baseurl: ""
 
-# avatar头像及Favicon
-avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
-favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+#
+encoding:         "utf-8"
+# Permalinks
+permalink:        pretty
 
-# google analytics 设置
-ga:
-  id: UA-54767140-1
-  url: yansu.org
+# Setup
+title:            Ericson's blog
+tagline:          'Time is limited, To be a better better man'
+description:      'Hello! Here is my blog about technology and later about life.'
+url:              http://ericsonyc.github.io
 
-# disqus 设置
-disqus:
-  shortname: suyan-zh
+author:
+  name:           Ericson
+  url:            https://github.com/ericsonyc
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
+
+# Custom vars
+version:          1.0.0
+
+# duoshuo
+comments :
+    provider : duoshuo
+    duoshuo :
+      short_name : eric

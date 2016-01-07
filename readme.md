@@ -1,18 +1,39 @@
-### 我的博客
+##this is my blog
+博客搭载在github上，地址:soohu.github.io
 
-地址：[http://yansu.org](http://yansu.org)
+##Usage
+如果觉得可以的话可以直接clone这个项目
 
-### 安装说明
+post
 
-1. fork库到自己的github
-2. 修改名字为：`username.github.io`
-3. clone库到本地，参考`_posts`中的目录结构自己创建适合自己的文章目录结构
-4. 修改CNAME，或者删掉这个文件，使用默认域名
-5. 修改`_config.yml`配置项
-6. It's done!
+* title
+* layout
+* author
+* category
+* tag
 
-### 分支说明
 
-- 三栏布局（master分支，基于[3-Jekyll](https://github.com/P233/3-Jekyll)）
-- 三栏布局 (bootstrap-based分支，基于Bootstrap)
-- 单栏布局（first-ui分支，基于Bootstrap）
+##Options
+施工中
+
+##Development
+1. 添加了多说评论插件
+2. 修改博客样式更偏向中文
+3. 博客样式个人化修改
+4. 增加highlight代码高亮
+5. 添加了分类页、归档页和标签页
+6. ...
+
+
+##Improvement
+1. 提高响应式
+
+
+##Author
+博客原作者:Mark Otto 
+[github](github.com/mdo)
+
+博客修改:Ericson
+
+##License
+NJU

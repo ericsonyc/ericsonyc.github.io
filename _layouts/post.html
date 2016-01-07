@@ -1,12 +1,107 @@
----
-layout: base
----
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-<article id="post__content">
-  <h1 id="post__title" data-identifier="{{ page.date | date: "%Y%m%d" }}">{{ page.title }}</h1>
-  {{ content }}
-</article> <!-- end #post__content -->
+  {% include head.html %}
 
-{% include share.html %}
-{% include disqus.html %}
+  <body class="">
+
+    {% include sidebar.html %}
+
+
+    
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    
+
+      <div class="container content">
+      <a href="/">
+        <svg id="mustache" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 79.5 47" enable-background="new 0 0 79.5 45.7" xml:space="preserve">
+                  <g transform="translate(0,-952.36217)" opacity="0.95">
+                    <path id="path2987" fill="#010101" d="M28.2,971.4c-10,0.5-19.1,13.3-28.2,2.1c0,15.1,23.7,30.5,39.8,16.3
+                    c16,14.1,39.8-1.3,39.8-16.3c-12.5,15.4-25-14.4-39.8,4.5C35.8,972.7,31.9,971.2,28.2,971.4z"/>
+                  </g>
+        </svg>
+      </a>
+<h2 class="post-name"></h2>
+<div class="post">
+  <div class="post-heading inside">
+    {% if page.author == "Ericson" %}
+    <img src="/public/img/{{page.author}}.jpg">
+    {% else %}
+    <img src="/public/img/SooHu.jpg">
+    {% endif %}
+    <h1 class="post-title">
+      <a class="post-title-blog" href="{{ post.url }}">
+        {{ page.title }}
+      </a>
+    </h1>
+      <p class="post-info">
+        {% if page.author == "Ericson" %}
+          {{ page.author }}原创
+        {% else %}
+          转载{{ page.author }}
+        {% endif %}
+      </p>
+      <span class="post-info"><i class="fa fa-calendar"></i>&nbsp{{ page.date | date: "%Y" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%d" }}  </span>
+      <span class="post-info"><i class="fa fa-book"></i>&nbsp<a href="/category/index.html#{{ page.categories }}">{{ page.categories }}</a></span>
+      <span class="post-info"><i class="fa fa-tags"></i>&nbsp<a href="/tag/index.html#{{ page.tags | first }}">{{ page.tags | first }}</a></span> 
+      <span class="post-info">&nbsp<a href="/tag/index.html#{{ page.tags[1] }}">{{ page.tags[1] }}</a></span>
+      <span class="post-info">&nbsp<a href="/tag/index.html#{{ page.tags[2] }}">{{ page.tags[2] }}</a></span>
+  </div>
+  <div class="post-content">
+    {{ content }}    
+  </div>
+</div>
+
+<!-- <div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div> -->
+
+
+<div class="sub_pagination">
+  
+  {% if page.next %}
+    <a class="sub_pagination-item newer" href="{{page.next.url}}">上一篇&nbsp<i class="fa fa-chain"></i></a>
+  {% else %}
+    <a class="sub_pagination-item" id="lastest">已经是最新一篇&nbsp<i class="fa fa-unlink"></i></a>
+  {% endif %}
+  {% if page.previous %}
+    <a class="sub_pagination-item newer" href="{{page.previous.url}}">{{ page.previous.title }}&nbsp<i class="fa fa-share"></i></a>
+  {% else %}
+    <a class="sub_pagination-item" id="lastone"><i class="fa fa-slideshare"></i>&nbsp 已经是最后一篇</a>
+  {% endif %}
+</div>
+
+
+<!-- <div class="comments"> -->
+<h2>Comments</h2>
+
+
+
+<!-- Duoshuo Comment BEGIN -->  
+{% include comment.html %}
+<!-- Duoshuo Comment END -->
+      </div>
+    </div>
+    
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    {% include footer.html %}
+
+    <!-- "The ending isn’t any more important than the moments leading to it." -Dr. Eva Rosalene, To The Moon -->
+  </body>
+</html>
 
