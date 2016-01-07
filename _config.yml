@@ -6,28 +6,28 @@ kramdown:
   input: GFM
 
 # 作者信息
-author:
-  name: Ericson
-  email: 1220246394@qq.com
-  link: http://ericsonyc.github.io
-  weibo:
-  github: http://github.com/ericsonyc
+author: 
+  name: 闫肃
+  email: suyan0830@gmail.com
+  link: http://yansu.org
+  weibo: http://weibo.com/yansu0711
+  github: http://github.com/suyan
 
 # 站点信息
-title: Ericson's Blog
-description: Learn more and to be a better man
-url: http://ericsonyc.github.io
+title: 闫肃的博客 
+description: 闫肃的博客
+url: http://yansu.org
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
-avatar: /public/img/Ericson.jpg
-favicon: /public/img/SooHu.jpg
+avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
+favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
 
 # google analytics 设置
 ga:
   id: UA-54767140-1
-  url: ericsonyc.github.io
+  url: yansu.org
 
 # disqus 设置
 disqus:
-  shortname: eric
+  shortname: suyan-zh
