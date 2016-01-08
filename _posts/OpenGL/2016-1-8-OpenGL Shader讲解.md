@@ -11,4 +11,4 @@ tag: [opengl,shader]
 
 <!-- more -->
 
-![OpenGL Shader](/public/img/android/opengl_shader.png)
+![OpenGL Shader](/public/img/opengl/opengl_shader.png)
