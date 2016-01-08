@@ -9,4 +9,6 @@ tag: [android,development,opengl,coordinate]
 
 本文转自[网页](http://learnopengl-cn.readthedocs.org/zh/latest/01%20Getting%20started/08%20Coordinate%20Systems/)
 
+<!-- more -->
+
 ![OpenGL Coordinate](/public/img/android/opengles_coordinate.png)

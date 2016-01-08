@@ -9,4 +9,6 @@ tag: [development,opengl,shader]
 
 本文转自[网页](http://learnopengl-cn.readthedocs.org/zh/latest/01%20Getting%20started/04%20Hello%20Triangle/)
 
+<!-- more -->
+
 ![OpenGL Shader](/public/img/android/opengl_shader.png)
