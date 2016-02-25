@@ -1,6 +1,6 @@
 # Dependencies
 markdown: kramdown
-redcarpet: 
+redcarpet:
     extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 
 kramdown:
@@ -19,7 +19,7 @@ kramdown:
     coderay_bold_every:        10
     coderay_css:               style
 
-highlighter:      pygments
+highlighter:      rouge
 baseurl: ""
 
 #
