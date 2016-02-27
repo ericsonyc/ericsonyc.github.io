@@ -11,4 +11,6 @@ tag: [mysql,install,msi]
 
 安装最新版的MySQL下面可做参考：
 
+<!-- more -->
+
 ![mysql install](/public/img/sql/mysql_msi_install.png)
