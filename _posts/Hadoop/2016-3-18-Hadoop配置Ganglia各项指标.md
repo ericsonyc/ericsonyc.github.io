@@ -12,3 +12,5 @@ tag: [hadoop,ganglia]
 <!-- more -->
 
 ![Ganglia_metrics](/public/img/hadoop/ganglia_metrics.png)
+
+![Hadoop_metrics](/public/img/hadoop/hadoop_metrics.png)
