@@ -6,7 +6,7 @@ title: About
 
 ###关于[我](https://github.com/ericsonyc)
 网名小老虎，英文名Ericson，
-目前是个苦逼的计算机研究僧，也就是传说中的IT男，以后希望learn more and be a better man。
+目前是个苦逼的计算机研究僧，也就是传说中的IT男，这篇博客主要是帮助记忆一些知识，方便以后查阅，因此可能转载了网上很多好的博客讲解，见谅，转载都会注明出处，以后希望learn more and be a better man。
 
 这篇博客主要用于记录平时学习的东西，方便以后查阅（可能转载好的文章居多），也会有自己整理的内容，会坚持更新
 
