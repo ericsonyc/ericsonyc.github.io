@@ -12,3 +12,9 @@ tag: [ios,swift]
 <!-- more -->
 
 ![swift coredata](/public/img/ios/swift_coredata.png)
+
+此外，还可以参考文档：
+
+http://blog.csdn.net/qq_16430735/article/details/48982413#项目适配codedata
+
+![Swift coredata2](/public/img/ios/swift_coredata2.png)
