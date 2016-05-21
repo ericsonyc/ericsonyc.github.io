@@ -7,4 +7,4 @@ category: Spark
 tag: [spark,test]
 ---
 
-This is my first Spark test blog.
+This is my first Spark blog.
