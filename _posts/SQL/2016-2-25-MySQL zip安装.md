@@ -9,9 +9,6 @@ tag: [mysql,install,zip]
 
 本文转载自[网页](http://blog.csdn.net/u014595019/article/details/49786711)
 
-<<<<<<< HEAD
-=======
 <!-- more -->
 
->>>>>>> f0182280468f74402b36bd9909e21e2190045acc
 ![mysql zip install](/public/img/sql/mysql_zip_install.png)
