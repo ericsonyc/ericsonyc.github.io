@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Why
+author: Rannie
 date: 2016-5-21 13:26
 title: IOS App Extension简介
 category: IOS
