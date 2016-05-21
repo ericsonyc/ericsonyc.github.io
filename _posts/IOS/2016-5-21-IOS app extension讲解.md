@@ -2,7 +2,7 @@
 layout: post
 author: Rannie
 date: 2016-5-21 13:26
-title: IOS App Extension简介
+title: IOS App Extension
 category: IOS
 tag: [ios,extension]
 ---
